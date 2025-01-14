@@ -20,13 +20,13 @@ const Accordian = ({title, desc}) => {
       <div className='h-11 w-full'></div>
 
       <div className='h-auto w-80% sm:w-60% lg:w-70% bg-gradient-to-r from-purple-500 to-purple-800 rounded-md'>
-        <div className='phone:h-10 px-4 flex items-center justify-between'>
-          <p className='phone:text-lg lg:text-2xl text-white font-MavenPro'>{title}</p>
-          <button className={`rounded-full phone:text-2xl text-white font-bold transition-transform duration-300 ease-in-out ${isExpanded ? 'rotate-45' : 'rotate-0'}`} onClick={toggleReadMore}>{isExpanded ? '+' : '+'}</button>
+        <div className='h-10 px-4 flex items-center justify-between'>
+          <p className='text-lg lg:text-2xl text-white font-MavenPro'>{title}</p>
+          <button className={`rounded-full text-2xl text-white font-bold transition-transform duration-300 ease-in-out ${isExpanded ? 'rotate-45' : 'rotate-0'}`} onClick={toggleReadMore}>{isExpanded ? '+' : '+'}</button>
         </div>
         {isExpanded && (
-        <div className="w-full bg-purple-950 phone:text-s font-Jura phone:px-4 phone:py-4 rounded-b-md transition-all duration-200 ease-in-out">
-          <p className='font-Jura phone:text-s lg:text-lg text-white'>{desc}</p>
+        <div className="w-full bg-purple-950 text-s font-Jura px-4 py-4 rounded-b-md transition-all duration-200 ease-in-out">
+          <p className='font-Jura text-s lg:text-lg text-white'>{desc}</p>
         </div>
       )}
       </div>
